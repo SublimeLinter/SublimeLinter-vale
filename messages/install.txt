@@ -1,0 +1,10 @@
+SublimeLinter-contrib-vale
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to vale.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/admhlt/SublimeLinter-contrib-vale
