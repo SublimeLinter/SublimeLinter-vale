@@ -25,9 +25,9 @@ class Vale(Linter):
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.5.0'
     regex = (
-        r"(?P<line>\d+):(?P<col>\d+)[ ]{2,}"
-        r"((?P<error>error)|(?P<warning>warning))[ ]{2,}"
-        r"(?P<message>[\w '!]+)[ ]{2,}"
+        r'(?P<line>\d+):(?P<col>\d+)\s{2,}'
+        r'((?P<error>error)|(?P<warning>warning))\s{2,}'
+        r'(?P<message>.+?)(?=\s{2,})'
     )
     multiline = True
     line_col_base = (1, 1)
