@@ -12,6 +12,7 @@
 
 from SublimeLinter.lint import Linter, util
 
+
 class Vale(Linter):
     """Provides an interface to vale."""
 
