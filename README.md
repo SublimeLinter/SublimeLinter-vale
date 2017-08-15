@@ -41,17 +41,17 @@ Once you have installed and configured `vale`, you can proceed to install the Su
 
 ### Plugin installation
 
-Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available.
+Please use [Package Control](https://packagecontrol.io/) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available.
 
 To install via Package Control, do the following:
 
-1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
+1. Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
 1. When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-contrib-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 
-For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
+For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.io/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.io/en/latest/linter_settings.html).
 
 You can configure Vale for your project using `.vale` configuration files. For more information, see [Vale's documentation](https://valelint.github.io/docs/config).
 
