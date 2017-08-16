@@ -17,7 +17,7 @@ class Vale(Linter):
     """Provides an interface to vale."""
 
     syntax = (
-        'plain-text',
+        'plain text',
         'markdown'
     )
     cmd = 'vale --no-wrap'
