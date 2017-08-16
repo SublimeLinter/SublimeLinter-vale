@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale)
 
-This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [vale](https://valelint.github.io/docs). It will be used with files that have the `plain text` or `markdown` syntaxes.
+This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://valelint.github.io/docs). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
 
 ## Installation
 
@@ -37,7 +37,7 @@ snap install vale
 
 ### Linter configuration
 
-In order for `vale` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+In order for `vale` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in "[Finding a linter executable](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable)" through "Validating your PATH" in the documentation.
 
 Once you have installed and configured `vale`, you can proceed to install the SublimeLinter-contrib-vale plugin if it is not yet installed.
 
@@ -45,7 +45,7 @@ Once you have installed and configured `vale`, you can proceed to install the Su
 
 Please use [Package Control](https://packagecontrol.io/) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available.
 
-To install via Package Control, do the following:
+To install this package with Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
@@ -55,7 +55,7 @@ To install via Package Control, do the following:
 
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.io/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.io/en/latest/linter_settings.html).
 
-You can configure Vale for your project using `.vale` configuration files. For more information, see [Vale's documentation](https://valelint.github.io/docs/config).
+You can configure Vale for your project using a configuration file named `.vale` or `_vale`. For more information, see [Vale's documentation](https://valelint.github.io/docs/config).
 
 ## Contributing
 
