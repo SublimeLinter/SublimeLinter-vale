@@ -47,9 +47,9 @@ Please use [Package Control](https://packagecontrol.io/) to install the linter p
 
 To install this package with Package Control, do the following:
 
-1. Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
+1.  Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-contrib-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
+2.  When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-contrib-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 
@@ -61,16 +61,16 @@ You can configure Vale for your project using a configuration file named `.vale`
 
 If you would like to contribute enhancements or fixes, please do the following:
 
-1. Fork this repository.
-2. Work on a separate topic branch created from the latest `master`.
-3. Commit and push the topic branch.
-4. Make a pull request.
+1.  Fork this repository.
+2.  Work on a separate topic branch created from the latest `master`.
+3.  Commit and push the topic branch.
+4.  Make a pull request.
 
 Please note that modifications should follow these coding guidelines:
 
-- Indent is 4 spaces.
-- Code should pass `flake8` and `pep257` linters.
-- Vertical whitespace helps readability, don’t be afraid to use it.
-- Please use descriptive variable names, no abbreviations unless they are well known.
+-   Indent is 4 spaces.
+-   Code should pass `flake8` and `pep257` linters.
+-   Vertical whitespace helps readability, don’t be afraid to use it.
+-   Please use descriptive variable names, no abbreviations unless they are well known.
 
 Thank you for helping out!
