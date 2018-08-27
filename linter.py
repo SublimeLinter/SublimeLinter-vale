@@ -34,7 +34,6 @@ class Vale(Linter):
     line_col_base = (1, 1)
     tempfile_suffix = None
     error_stream = util.STREAM_BOTH
-    selectors = {}
     word_re = None
     defaults = {}
     inline_settings = None
