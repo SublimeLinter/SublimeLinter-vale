@@ -1,12 +1,12 @@
 # SublimeLinter-contrib-vale
 
-[![Build Status](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale)
-
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://valelint.github.io/docs). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
+
+This version is updated to work with the later versions of SublimeLinter. It may disappear in the infrequent event that [the original package](https://packagecontrol.io/packages/SublimeLinter-contrib-vale) is upgraded.
 
 ## Installation
 
-SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here](http://sublimelinter.readthedocs.org/en/latest/installation.html).
+SublimeLinter 3 must be installed to use this plugin. To install, please follow the instructions [here](http://sublimelinter.readthedocs.org/en/latest/installation.html).
 
 ### Linter installation
 
@@ -29,29 +29,43 @@ brew install vale
 
 #### Linux
 
-You can install Vale using [snap](https://snapcraft.io):
+The recommended way to install Vale is through [GoDownloader](https://install.goreleaser.com/projects/):
 
+```console
+# Vale will be installed into `/bin/vale`.
+$ curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sh -s vX.Y.Z
 ```
-snap install vale
-```
+
+where `vX.Y.Z` is your version of choice from the [releases page](https://github.com/errata-ai/vale/releases).
+
 
 ### Linter configuration
 
 In order for `vale` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in "[Finding a linter executable](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable)" through "Validating your PATH" in the documentation.
 
-Once you have installed and configured `vale`, you can proceed to install the SublimeLinter-contrib-vale plugin if it is not yet installed.
+Once you have installed and configured `vale`, you can install the `SublimeLinter-contrib-vale` plugin.
 
 ### Plugin installation
 
-Please use [Package Control](https://packagecontrol.io/) to install the linter plugin. This will ensure that the plugin will be updated when new versions are available.
+Here's how to install this custom fork of `SublimeLinter-contrib-vale`.
 
-To install this package with Package Control, do the following:
-
-1.  Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
-
-2.  When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-contrib-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
+1. In the Command Palette, enter `Package Control: Add Repository`.
+2. When prompted, enter the URL `git@github.com:dylan-k/SublimeLinter-contrib-vale.git`.
+3. In the Command Palette, enter `Package Control: Install Package`.
+4. Search for ``Vale`` and you should see an option for `SublimeLinter-contrib-vale` with URL you entered in its description. Select that option to install.
+5. Quit Sublime.
+6. Go to folder Packages:
+```
+Windows: %APPDATA%\Sublime Text 3\Packages
+OS X: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+Linux: ~/.config/sublime-text-3/Packages/
+```
+7. Run: git clone https://github.com/dylan-k/SublimeLinter-contrib-vale.git
+8. Open Sublime and try to use.
 
 ## Settings
+
+No extra settings required, but just in case:
 
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.io/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.io/en/latest/linter_settings.html).
 
@@ -59,18 +73,4 @@ You can configure Vale for your project using a configuration file named `.vale`
 
 ## Contributing
 
-If you would like to contribute enhancements or fixes, please do the following:
-
-1.  Fork this repository.
-2.  Work on a separate topic branch created from the latest `master`.
-3.  Commit and push the topic branch.
-4.  Make a pull request.
-
-Please note that modifications should follow these coding guidelines:
-
--   Indent is 4 spaces.
--   Code should pass `flake8` and `pep257` linters.
--   Vertical whitespace helps readability, don’t be afraid to use it.
--   Please use descriptive variable names, no abbreviations unless they are well known.
-
-Thank you for helping out!
+Contribute to [the original package](https://packagecontrol.io/packages/SublimeLinter-contrib-vale), since this is a fork.
