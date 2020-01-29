@@ -16,10 +16,9 @@ from SublimeLinter.lint import Linter, util
 class Vale(Linter):
     """Provides an interface to vale."""
 
-    syntax = (
-        'plain text',
-        'markdown'
-    )
+    defaults = {
+        'selector': 'text.plain, text.html.markdown',
+    }
     cmd = 'vale --no-wrap'
     executable = None
     version_args = '--version'
@@ -28,15 +27,13 @@ class Vale(Linter):
     regex = (
         r'(?P<line>\d+):(?P<col>\d+)\s{2,}'
         r'((?P<error>error)|(?P<warning>warning))\s{2,}'
-        r'(?P<message>.+?)(?=\s{2,})'
+        r'(?P<message>.+?)(?=$)'
     )
     multiline = True
     line_col_base = (1, 1)
     tempfile_suffix = None
     error_stream = util.STREAM_BOTH
-    selectors = {}
     word_re = None
-    defaults = {}
     inline_settings = None
     inline_overrides = None
     comment_re = None
