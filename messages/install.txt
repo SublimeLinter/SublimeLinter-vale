@@ -1,5 +1,6 @@
 SublimeLinter-vale
--------------------------------
+------------------
+
 This linter plugin for SublimeLinter provides an interface to vale.
 
 ** IMPORTANT! **
