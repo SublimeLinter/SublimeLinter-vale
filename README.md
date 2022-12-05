@@ -1,6 +1,6 @@
-# SublimeLinter-contrib-vale
+# SublimeLinter-vale
 
-[![Build Status](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale)
+[![Build Status](https://travis-ci.org/admhlt/SublimeLinter-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-vale)
 
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://vale.sh/). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
 
@@ -39,7 +39,7 @@ snap install vale
 
 In order for `vale` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in "[Finding a linter executable](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable)" through "Validating your PATH" in the documentation.
 
-Once you have installed and configured `vale`, you can proceed to install the SublimeLinter-contrib-vale plugin if it is not yet installed.
+Once you have installed and configured `vale`, you can proceed to install the SublimeLinter-vale plugin if it is not yet installed.
 
 ### Plugin installation
 
@@ -49,7 +49,7 @@ To install this package with Package Control, do the following:
 
 1.  Within Sublime Text, bring up the [Command Palette](http://docs.sublimetext.info/en/sublime-text-3/extensibility/command_palette.html) and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-2.  When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-contrib-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
+2.  When the plugin list appears, type `vale`. Among the entries you should see `SublimeLinter-vale`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 
