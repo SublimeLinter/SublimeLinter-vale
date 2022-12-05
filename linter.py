@@ -19,11 +19,7 @@ class Vale(Linter):
     defaults = {
         'selector': 'text.plain, text.html.markdown',
     }
-    cmd = 'vale --no-wrap'
-    executable = None
-    version_args = '--version'
-    version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.5.0'
+    cmd = ('vale', '--no-wrap', '${args}', '${temp_file}')
     regex = (
         r'(?P<line>\d+):(?P<col>\d+)\s{2,}'
         r'((?P<error>error)|(?P<warning>warning))\s{2,}'
@@ -31,9 +27,6 @@ class Vale(Linter):
     )
     multiline = True
     line_col_base = (1, 1)
-    tempfile_suffix = None
+    tempfile_suffix = 'md'
     error_stream = util.STREAM_BOTH
     word_re = None
-    inline_settings = None
-    inline_overrides = None
-    comment_re = None
