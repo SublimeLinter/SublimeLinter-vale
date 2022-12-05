@@ -10,13 +10,18 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 
 ### Linter installation
 
-Before using this plugin, you must ensure that `vale` is installed on your system.
+Before using this plugin, you must ensure that `vale` is installed on your system
+(See https://vale.sh/docs/vale-cli/installation/).
 
 **Note**: This plugin requires `vale` **0.5.0** or later.
 
 #### Windows
 
-Visit the [releases page](https://github.com/ValeLint/vale/releases) and download and install the latest `.msi` installer for Vale.
+You can install Vale using choco
+
+```
+choco install vale
+```
 
 #### macOS
 
