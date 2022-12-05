@@ -1,7 +1,5 @@
 # SublimeLinter-vale
 
-[![Build Status](https://travis-ci.org/admhlt/SublimeLinter-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-vale)
-
 This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://vale.sh/). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
 
 ## Installation
