@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale.svg?branch=master)](https://travis-ci.org/admhlt/SublimeLinter-contrib-vale)
 
-This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://valelint.github.io/docs). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
+This linter plugin for [SublimeLinter](http://sublimelinter.readthedocs.org) provides an interface to [Vale](https://vale.sh/). It will be used with files that have the `Plain text` or `Markdown` syntaxes.
 
 ## Installation
 
@@ -55,7 +55,7 @@ To install this package with Package Control, do the following:
 
 For general information on how SublimeLinter works with settings, please see [Settings](http://sublimelinter.readthedocs.io/en/latest/settings.html). For information on generic linter settings, please see [Linter Settings](http://sublimelinter.readthedocs.io/en/latest/linter_settings.html).
 
-You can configure Vale for your project using a configuration file named `.vale` or `_vale`. For more information, see [Vale's documentation](https://valelint.github.io/docs/config).
+You can configure Vale for your project using a configuration file named `.vale` or `_vale`. For more information, see [Vale's documentation](https://vale.sh/docs/topics/config/).
 
 ## Contributing
 
