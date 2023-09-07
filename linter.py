@@ -22,7 +22,7 @@ class Vale(Linter):
     cmd = ('vale', '--no-wrap', '${args}', '${temp_file}')
     regex = (
         r'(?P<line>\d+):(?P<col>\d+)\s{2,}'
-        r'((?P<error>error)|(?P<warning>warning))\s{2,}'
+        r'(?P<error_type>\S+)\s{2,}'
         r'(?P<message>.+?)(?=$)'
     )
     multiline = True
